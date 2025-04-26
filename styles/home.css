@@ -1,22 +1,19 @@
 section {
   background-color: rgb(250, 250, 250);
-  height: 100vh;
-}
-
-.trust-section {
   padding: 1rem 3rem;
 }
-.trust-section .section-title {
+section .section-title {
   font-weight: 400;
   font-size: 3rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
-.trust-section .section-des {
+section .section-des {
   /* margin-top: 3rem; */
   margin-bottom: 3rem;
   color: rgb(112, 113, 104);
 }
+
 .trust-section .trust-cards {
   /* display: flex;
   justify-content: space-between; */
@@ -61,4 +58,109 @@ section {
 .trust-section .trust-cards .trust-card .des {
   font-size: 1.3rem;
   color: rgb(112, 113, 104);
+}
+
+.services-section .section-title, .services-section .section-des {
+  text-align: center;
+}
+.services-section .services-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.services-section .services-cards .service-card {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: solid 2px rgba(112, 113, 104, 0.3);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.services-section .services-cards .service-card:hover {
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+.services-section .services-cards .service-card .card-top {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+.services-section .services-cards .service-card .card-top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services-section .services-cards .service-card .card-bottom {
+  padding: 1rem;
+}
+.services-section .services-cards .service-card .card-bottom .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.services-section .services-cards .service-card .card-bottom .card-des {
+  color: rgb(112, 113, 104);
+}
+.services-section .frame-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.services-section .frame-btn .services-view-all-btn {
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 1.25rem;
+  padding: 0.5rem 2rem;
+  border: solid 1px black;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.services-section .frame-btn .services-view-all-btn:hover {
+  background-color: black;
+  color: white;
+  width: 12rem;
+}
+
+.methods-section .section-title, .methods-section .section-des {
+  text-align: center;
+}
+.methods-section .main-content {
+  display: flex;
+  gap: 1rem;
+}
+.methods-section .main-content .left {
+  width: 60%;
+  height: 30rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.methods-section .main-content .left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.methods-section .main-content .right {
+  width: 40%;
+  height: 30rem;
+  padding: 1rem;
+  list-style: none;
+}
+.methods-section .main-content .right .right-item {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  text-align: justify;
+  background-color: rgb(228, 228, 228);
+  cursor: pointer;
+}
+.methods-section .main-content .right .right-item:hover {
+  background-color: rgb(205, 205, 205);
+}
+.methods-section .main-content .right .right-item .num {
+  font-weight: 900;
 }/*# sourceMappingURL=home.css.map */

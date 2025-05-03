@@ -10,6 +10,7 @@ body {
 
 :root {
   --primary: rgb(112, 113, 104);
+  --light-grey: rgb(240,240,240);
 }
 
 nav {

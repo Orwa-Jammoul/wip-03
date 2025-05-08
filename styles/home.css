@@ -480,6 +480,7 @@ section .section-des {
 }
 
 .grow-with-us-section {
+  background-color: white;
   height: 60vh;
 }
 .grow-with-us-section .grow-with-us-frame {

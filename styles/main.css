@@ -50,10 +50,10 @@ nav .nav-frame .nav-links .nav-link {
   transition: all 300ms ease-in-out;
   z-index: 0;
 }
-nav .nav-frame .nav-links .nav-link:hover {
+nav .nav-frame .nav-links .nav-link:hover, nav .nav-frame .nav-links .nav-link.active {
   color: var(--primary2);
 }
-nav .nav-frame .nav-links .nav-link:hover::after {
+nav .nav-frame .nav-links .nav-link:hover::after, nav .nav-frame .nav-links .nav-link.active::after {
   width: 100%;
 }
 nav .nav-frame .nav-links .nav-link::after {

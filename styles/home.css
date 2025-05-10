@@ -123,6 +123,60 @@ section .section-des {
   font-size: 1.3rem;
   color: var(--primary);
 }
+@media (max-width: 991px) {
+  .trust-section .trust-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .trust-section .trust-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 570px) {
+  .trust-section .trust-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .trust-section .trust-cards .trust-card .ratio {
+    font-size: 1.2rem;
+  }
+}
+
+.trust-section2 .trust-card {
+  position: relative;
+  /* width: 15rem;
+  height: 15rem; */
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* height: 100%; */
+  background-color: rgb(250, 250, 250);
+  border-radius: 2rem;
+  /* border: solid 1px black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+.trust-section2 .trust-card .icon-frame {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trust-section2 .trust-card .ratio {
+  font-size: 3rem;
+}
+.trust-section2 .trust-card .des {
+  font-size: 1.3rem;
+  color: var(--primary);
+}
 
 .services-section .section-title, .services-section .section-des {
   text-align: center;
